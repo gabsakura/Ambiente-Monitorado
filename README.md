@@ -9,7 +9,7 @@
 | **$ cd Ambiente-Monitorado-main** |
 
 ### Por fim clique com o botao direito no "index.html" e abra o Live server para o funcionamento do codigo imagens para facilitar:
-![Tutorial](https://github.com/gabsakura/app-dados-sensores/blob/main/images/loginscreen.png)
+![Tutorial](https://github.com/gabsakura/Ambiente-Monitorado/blob/main/images/Index.png)
 Imagens para localização 
 
-![LoginScreen](https://github.com/gabsakura/app-dados-sensores/blob/main/images/loginscreen.png)
+![LoginScreen](https://github.com/gabsakura/Ambiente-Monitorado/blob/main/images/image.png)
