@@ -6,7 +6,7 @@
 
 | **$ git clone https://github.com/gabsakura/Ambiente-Monitorado** | 
 
-| **$ cd Ambiente-Monitorado-main** |
+| **$ cd Ambiente-Monitorado** |
 
 ### Em seguida, clique com o botão direito no "index.html" e abra-o com o Live Server para o funcionamento do código. Abaixo, imagens para facilitar:
 
