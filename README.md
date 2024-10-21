@@ -10,7 +10,8 @@
 
 ### Por fim clique com o botao direito no "index.html" e abra o Live server para o funcionamento do codigo imagens para facilitar:
 
+### imagens para localização
 ![Tutorial](https://github.com/gabsakura/Ambiente-Monitorado/blob/main/images/Index.png)
-### Imagens para localização 
+
 
 ### ![LoginScreen](https://github.com/gabsakura/Ambiente-Monitorado/blob/main/images/image.png)
