@@ -21,7 +21,8 @@
       border: 1px solid #dee2e6;
       border-radius: 10px;
       background-color: #e9ecef;
-      padding: 20px; /* Ajustado para dar espaço entre os cômodos */
+      padding: 20px;
+      /* Ajustado para dar espaço entre os cômodos */
     }
 
     .comodo {
@@ -29,13 +30,16 @@
       border-radius: 10px;
       background-color: #ffffff;
       box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-      width: calc(50% - 20px); /* Largura de 50% menos a margem */
-      height: 300px; /* Altura fixa para todos os cômodos */
+      width: calc(50% - 20px);
+      /* Largura de 50% menos a margem */
+      height: 300px;
+      /* Altura fixa para todos os cômodos */
       display: flex;
       flex-direction: column;
       align-items: center;
       justify-content: center;
-      margin: 10px; /* Margem para espaçamento entre os cômodos */
+      margin: 10px;
+      /* Margem para espaçamento entre os cômodos */
     }
 
     .sensor {
@@ -72,7 +76,7 @@
     let token = null; // Variável para armazenar o token JWT
 
     const sensors = [
-      { sensor_id: 1, room: 'Cozinha', countdown: 60, lastTemperature: null },
+      { sensor_id: 1, room: 'Cozinha', countdown: 0, lastTemperature: null },
       { sensor_id: 2, room: 'Sala', countdown: 60, lastTemperature: null },
       { sensor_id: 3, room: 'Quarto', countdown: 60, lastTemperature: null },
       { sensor_id: 4, room: 'Escritório', countdown: 60, lastTemperature: null },
@@ -157,7 +161,7 @@
           countdownElement.textContent = `Próximo envio automático em ${sensor.countdown} segundos`;
         } else {
           sendData(sensor);
-          sensor.countdown = 60;
+          sensor.countdown = 30;
           countdownElement.textContent = `Próximo envio automático em ${sensor.countdown} segundos`;
         }
       });
@@ -167,7 +171,7 @@
     const handleSendButtonClick = (sensorId) => {
       const sensor = sensors.find(s => s.sensor_id === sensorId);
       sendData(sensor);
-      sensor.countdown = 60;
+      sensor.countdown = 30;
       document.getElementById(`countdown-${sensor.sensor_id}`).textContent = `Próximo envio automático em ${sensor.countdown} segundos`;
     };
 
@@ -178,7 +182,8 @@
 <body>
   <div class="container mt-5">
     <h1 class="text-center mb-4">Minha Casa</h1>
-    <p class="text-center mb-5">Cada sensor enviará dados automaticamente a cada 60 segundos ou manualmente ao clicar no botão correspondente.</p>
+    <p class="text-center mb-5">Cada sensor enviará dados automaticamente a cada 60 segundos ou manualmente ao clicar no
+      botão correspondente.</p>
 
     <div class="planta">
       <div id="cozinha" class="comodo">
